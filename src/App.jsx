@@ -5,6 +5,7 @@ import viteLogo from '/vite.svg'
 import Header from './Header.jsx'
 import Home from './Home.jsx'
 import LogIn from './LogIn.jsx'
+import Payment from './Payment.jsx'
 import { BrowserRouter as Router, Routes, Route,Link }
 from "react-router-dom";
 import Checkout from './Checkout.jsx'
@@ -37,6 +38,7 @@ function App() {
        <Header />
         <Routes>
           <Route path='/login' element={[<LogIn/>]} />
+          <Route path='/payment' element={[<Payment/>]} />
           <Route path="/" element={[<Home />]} />
           <Route path="/checkout" element={<Checkout/>} />
         </Routes>
